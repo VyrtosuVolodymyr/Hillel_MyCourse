@@ -36,21 +36,13 @@ namespace MathEx
                 ProgramOpen = false;
             } while (ProgramOpen);
 
+            //2 задание
+            Console.WriteLine("Введите число, квадрат которого вы хотите вычислить:");
+            double number = Convert.ToDouble(Console.ReadLine()); 
 
-            //Втоая программа про  квадрат 
-            Console.WriteLine("-Посчитайте периметр квадрата!");
-            Thread.Sleep(900);
-            Console.Write("-Напишите значение 1 стороны: ");
-            int per_1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("-Напишите значение 2 стороны: ");
-            int per_2 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("-Напишите значение 3 стороны: ");
-            int per_3 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("-Напишите значение 4 стороны: ");
-            int per_4 = Convert.ToInt32(Console.ReadLine());
+            double square = Math.Pow(number, 2); 
 
-
-            Console.WriteLine($"-Ответ: {per_1 + per_2 + per_3 + per_4} ");
+            Console.WriteLine($"Квадрат числа {number} равен {square}."); 
 
             //Дано тризначне число. Знайти число, отримане під час перестановки першої та другої цифр заданого числа.
             bool ProgOpen = true;
@@ -102,6 +94,16 @@ namespace MathEx
 
             Console.WriteLine($"Ваш ответ - {area}");
 
+            //6
+
+            int a = 5, b = 10;
+            a = a ^ b;
+            b = a ^ b; 
+            a = a ^ b;
+            // (2)
+
+            int a = 5, b = 10;
+            (a, b) = (b, a);
 
         }
     }
