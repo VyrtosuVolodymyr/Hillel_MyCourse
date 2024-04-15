@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace DZ4
+namespace ConsoleApp4
 {
     internal class Program
     {
@@ -98,7 +98,7 @@ namespace DZ4
                 if (number < 1 || number > 100)
                 {
                     Console.WriteLine("Error! Please write number from 1 to 100");
-                    continue; 
+                    continue;
                 }
 
                 if (number % 15 == 0)
@@ -119,7 +119,7 @@ namespace DZ4
                 else
                 {
                     Console.WriteLine(number);
-                    IsOpen4 = false; 
+                    IsOpen4 = false;
                 }
 
                 Thread.Sleep(1500);
